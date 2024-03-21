@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#custom-modal .modal-content{
+height: 600px;
+
+}
+.popup_flex{
+    display: flex;
+    margin-bottom: 30px;
+  
+}
+
+.popup_flex img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.popup_flex div{
+    margin-left: 4px;
+}
+
+.popup_flex i{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 20px;
+}
+
+
+textarea{
+    border: none;
+    width: 100%;
+    display: block;
+    resize: none;
+    outline: none;
+   
+}
+
+input[type="file"]{
+display: none;
+}
+
+.picture{
+    cursor: pointer;
+}
+
+.img_model{
+height: 300px;
+/* width: 90px; */
+width: calc(100% - 5%);
+position: absolute;
+border-radius: 10px;
+}
+.post_EDITOR_Icon{
+    margin-top: 190px;
+
+}
+
+.post_EDITOR_Icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post_EDITOR_Icon i{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+
+
+  button.post{
+      position: relative;
+    margin-top: 150px;
+    border: none;
+    padding:5px 30px;
+    border-radius: 7px;
+    text-align: center;
+    cursor: no-drop;
+}
+.active button.post{
+    background-color: rgb(65, 129, 239);
+       color: white;
+       cursor: pointer;
+   }
+
+.popup_uesr button:hover{
+    opacity: 0.6;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    button.post{
+        top: -35px;
+    }
+
+    #video{
+        position: relative;
+      margin-bottom: 4px;
+  
+
+    }
+
+    .img_model{
+        height: 200px;
+        width: 90%;
+        /* width: 30%; */
+    }
+}

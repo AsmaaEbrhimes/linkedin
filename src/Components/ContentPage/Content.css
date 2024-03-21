@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.one_row {
+    background-color: white;
+    height: fit-content;
+    margin-top: 90px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+}
+
+.img_background {
+    position: relative;
+    width: calc(100% + 10%);
+    left: -10px;
+    display: block;
+    height: 60px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.user_image {
+    position: relative;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    top: -15px
+}
+
+.one_row .border_bottom {
+    position: relative;
+}
+
+.one_row .border_bottom::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40%);
+    height: 1px;
+    background-color: #ccc;
+    left: -10px;
+}
+
+.show_more {
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(225, 224, 224);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    padding: 10px;
+    display: none;
+}
+
+.first p {
+    text-align: center;
+    top: -10px
+}
+
+.first p:last-child {
+    color: rgb(216, 17, 17);
+}
+
+.content_user {
+    height: 300px;
+    transition: 0.5s linear;
+}
+
+.accrdion.content_user {
+    height: 300px
+}
+
+.second .desc {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.second .desc p {
+    position: relative;
+    padding: 4px;
+    margin: 0;
+}
+
+.second .desc p:last-child {
+    color: rgb(152, 152, 237);
+}
+
+.parch {
+    color: #ccc;
+}
+
+.second p {
+    padding: 0;
+    margin: 0;
+}
+
+.last {
+    margin-top: 20px;
+}
+
+.last .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last p {
+    padding: 0;
+    margin: 4px;
+}
+
+.last_desc {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show_more.none {
+    display: none;
+}
+
+/*********Row Two********/
+
+.two_row {
+    position: relative;
+    top: 70px;
+}
+
+.loding {
+    position: relative;
+    z-index: 111;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 70px;
+
+}
+
+.flex_post {
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: rgb(248, 244, 244);
+}
+
+.flex_post div {
+    display: flex;
+}
+
+.flex_post img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.flex_post input {
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    border: 2px solid #ccc;
+}
+
+
+.flex_post input:hover {
+    background-color: #ccc;
+}
+
+.flex_post input:focus {
+    outline: none;
+    border: 1px solid rgba(223, 112, 72, 0.81);
+}
+
+.dots {
+    position: absolute;
+    pointer-events:auto;
+    right: 10px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.post_user_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.post_user_list li {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.post_user_list li p {
+    font-size: 15px;
+}
+
+.post_user_list li i {
+    position: relative;
+    font-size: 20px;
+    margin-right: 4px;
+}
+
+.creat_post_user {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    height: 430px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #eee,
+        0 0 10px #eee,
+        0 0 10px #eee;
+}
+
+
+.flex_desc_post {
+    display: flex;
+    margin-top: 10px;
+}
+
+.flex_desc_post img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+
+.flex_desc_post .desc p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.img_post_user {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.Action_button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 40px;
+    right: 30px;
+    background-color: #eee;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    width: 190px;
+    visibility: hidden;
+}
+
+.Action_button li {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Action_button li i{
+    margin-right: 10px;
+}
+
+.Action_button li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.block.Action_button {
+   visibility:visible;
+}
+
+
+.active{
+    display: block;
+}
+
+
+.check{
+    color: green;
+}
+
+
+/*********Row Three********/
+
+.row_there {
+    position: relative;
+    top: 90px;
+}
+
+.row_there .artclies {
+    top: 90px;
+    border-radius: 20px;
+    position: fixed;
+    background-color: white;
+    padding: 5px;
+}
+
+.row_there .artclies img {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.row_there .artclies button {
+    background-color: white;
+    border: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border: 2px solid rgba(0, 42, 255, 0.392);
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.row_there .artclies button:hover {
+    background-color: rgba(0, 42, 255, 0.392);
+}
+
+.row_there .person {
+    position: absolute;
+    top: 300px;
+    height: 390px;
+    width: calc(100% + 80%);
+    border-radius: 10px;
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .show_more {
+        display: block;
+    }
+
+    .content_user {
+        height: 0;
+    }
+
+    .two_row {
+        position: relative;
+        top: -10px;
+    }
+
+    .row_there .artclies {
+        position: relative;
+        right: 0;
+        top: -80px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .row_there .person {
+        width: calc(100% - 4%);
+        top: 200px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .one_row {
+        height: 560px;
+    }
+
+    .img_background {
+        width: calc(100% + 20%);
+    }
+
+    .row_there .artclies {
+        position: relative;
+        right: 0;
+        top: -10px;
+        width: calc(100% - 25%);
+        left: 90px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .row_there .person {
+        width: calc(100% - 30%);
+        margin-left: 200px;
+        top: 230px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .one_row {
+        height: 550px;
+    }
+
+    .img_background {
+        width: calc(100% + 20%);
+    }
+
+}

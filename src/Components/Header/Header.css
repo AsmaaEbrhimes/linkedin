@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+  
+}
+li{
+    list-style: none;
+}
+.overlay_hearder{
+    background-color: white;
+    padding: 0;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: 1111;
+}
+.content_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left{
+    display: flex;
+position: relative;
+top: -10px;
+    align-items: center;
+}
+.left .logo_imge{
+    width: 40px;
+    border-radius: 5px;
+}
+.left .glass{
+    position:absolute;
+    margin-left: 45px;
+}
+.left .input_header{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 2px;
+    height: 0px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(230, 242, 247);
+    transition: 0.5s linear;
+   
+}
+.left .input_header:focus{
+    width: 400px;
+    outline: none;
+   
+}
+
+.list_nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.list_nav li{
+    margin-left: 20px;
+}
+.list_nav li i:not(:last-child){
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    position: relative;
+}
+
+.list_nav li i.bell::after{
+position: absolute;
+content: "0";
+background-color: red;
+height: 15px;
+width: 15px;
+line-height: 15px;
+color: white;
+border-radius: 50%;
+right: 24px;
+top: -5px;
+font-size: 10px;
+}
+.list_nav .user_imge{
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+@media (min-width:320px) and (max-width:767px){
+   .content_header{
+     padding: 15px;
+   }
+    .left .input_header{
+        display: none;
+    }
+    .left .logo_imge{
+        width: 30px;
+    }
+    .list_nav li{
+        margin-left: 7px;
+        font-size: 11px;
+    }
+    .list_nav li p{
+font-size: 9px;
+    }
+    .list_nav li i:not(:last-child){
+        font-size: 15px;
+    }
+    .list_nav li i.bell::after{
+        right: 10px;
+        height: 15px;
+        width: 15px;
+        line-height: 15px;
+    }
+    .list_nav .user_imge{
+        width: 30px;
+        border-radius: 50%;
+
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    .list_nav li{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+}
+/* @media (min-width:1200px) and (max-width:1400px){
+    
+} */
